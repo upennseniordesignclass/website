@@ -1,0 +1,105 @@
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.landing_container {
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+}
+
+.landing_bar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.landing_bar > div {
+    margin: .5em;
+}
+
+.word {
+    display: none;
+    left: 6.5em;
+    top: .5em;
+    position: absolute;
+    max-height: 1.25em;
+    max-width: 5em;
+    transition: .2s ease all;
+    z-index: 100;
+}
+
+.word:hover {
+    cursor: pointer;
+}
+
+.about a,
+.title a 
+{
+	color: black;
+	font-size: 24px;
+	font-family: Helvetica, Arial, sans-serif;
+	text-decoration: none;
+}
+
+.main_image_container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#main_image {
+    height: 80vh;
+    width: 80vw;
+
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+
+    margin-top: 2.5em;
+}
+
+#image_number_label {
+    align-items: center;
+    display: flex;
+    font-size: .5em;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+/* mobile devices (only plan to support 320px-480px) */
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* ipads and tablets (480px-767px) */
+@media screen and (min-width: 480px) {
+    html {
+        font-size: 24px;
+    }
+}
+
+/* small screens and laptops (768px-1023px) */
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 32px;
+    }
+}
+
+/* desktops and large screens (1024px-1199px) */
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 40px;
+    }
+}
